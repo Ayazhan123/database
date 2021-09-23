@@ -1,4 +1,7 @@
-
+--data definition or data description language (DDL) is a syntax for creating and modifying database objects such as tables, indices, and users
+--A data manipulation language (DML) is a computer programming language used for adding (inserting), deleting, and modifying (updating) data in a database.
+--DDL commands: CREATE, ALTER, DROP
+--DML commands: SELECT, INSERT, UPDATE, DELETE
 -- DDL:
 
 CREATE TABLE students(
