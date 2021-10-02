@@ -8,8 +8,8 @@ where building='Watson' or building='Packard';
 select * from course
 where dept_name='Comp. Sci.';
 --d
-select * from course, section
-where course.course_id = section.course_id and semester='Fall';
+select * from course, takes
+where course.course_id = takes.course_id and semester='Fall';
 --e
 select * from student
 where tot_cred > 45 and tot_cred < 90;
