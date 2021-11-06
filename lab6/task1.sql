@@ -48,7 +48,7 @@ select c.name, c.priority, d.name, s.id, s.amount
 from dealer as d
 join client as c on d.id = c.dealer_id
 join sell as s on c.id = s.client_id
-where c.priority<>0 AND s.amount>2000;
+where c.priority is not null and s.amount>2000;
 
 
 
