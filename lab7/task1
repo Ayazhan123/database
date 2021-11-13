@@ -1,0 +1,21 @@
+1.How can we store large-object types?
+
+Many database applications need to store attributes whose domain consists of large
+data items such as a photo, a high-resolution medical image, or a video. SQL, therefore,
+provides large-object data types for character data (clob) and binary data (blob). The
+letters “lob” in these data types stand for “Large OBject.” For example, we may declare
+attributes
+
+book review clob(10KB)
+image blob(10MB)
+movie blob(2GB)
+
+For result tuples containing large objects (multiple megabytes to gigabytes), it is
+inefficient or impractical to retrieve an entire large object into memory. Instead, an
+application would usually use an SQL query to retrieve a “locator” for a large object
+and then use the locator to manipulate the object from the host language in which
+the application itself is written. For instance, the JDBC application program interface
+(described in Section 5.1.1) permits a locator to be fetched instead of the entire large
+object; the locator can then be used to fetch the large object in small pieces, rather than
+all at once, much like reading data from an operating system file using a read function
+call. When a query returns a large-object, a pointer is returned rather than the large-object itself.

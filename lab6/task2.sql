@@ -61,3 +61,4 @@ join dealer as d on s.dealer_id = d.id and c.city = d.location
 group by c.city;
 
 drop view g;
+

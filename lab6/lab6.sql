@@ -52,3 +52,6 @@ INSERT INTO sell (id, amount, date, client_id, dealer_id) VALUES (212, 250.45, '
 INSERT INTO sell (id, amount, date, client_id, dealer_id) VALUES (211, 75.29, '2012-08-17 00:00:00.000000', 803, 107);
 INSERT INTO sell (id, amount, date, client_id, dealer_id) VALUES (213, 3045.6, '2012-04-25 00:00:00.000000', 802, 101);
 
+drop table client;
+drop table dealer;
+drop table sell;
