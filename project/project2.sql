@@ -135,6 +135,8 @@ insert into product values (09,'Iphone 13', 'Cell Phones',  'Apple', 'JLS-1LCNMJ
 insert into product values (10,'Smart Tizen TV', 'TVs & Projectors', 'Samsung', 'UN55TU7000FXZA', 'black', 'Free Shipping Eligible', 459, 5, 'London', 11);
 insert into product values (11,'Shiva Gaming PC Desktop ', 'PC Gaming',  'Skytech Gaming', 'ST-SHIVA-0297-BU', 'white', 'on sale', 1299, 4, 'California', 10);
 
+insert into manufacturer values ()
+
 drop table inventory;
 drop table manufacturer;
 drop table contract;
