@@ -4,7 +4,7 @@
 create role accountant;
 create role administrator;
 create role support;
-grant select, insert on accounts, transactions to accountant;
+grant select, insert, update on accounts, transactions to accountant;
 grant all privileges on accounts, transactions, customers to administrator;
 grant select, insert, update, delete on accounts, customers to support;
 
@@ -62,10 +62,12 @@ $$
         select balance into b from accounts where account_id = 'NT10204';
         select accounts.limit into l from accounts where account_id = 'NT10204';
         if b < l then
-            update transactions set status = 'rollback' where id = 2;
+            rollback;
+            update transactions set status = 'rollback' where id = 1;
         else
             commit;
-            update transactions set status = 'commit' where id = 2;
+            update transactions set status = 'commit' where id = 1;
         end if;
 
 END$$;
+

@@ -34,3 +34,8 @@ INSERT INTO accounts VALUES ('RS88012', 203, 'KZT', 5000, -100);
 INSERT INTO transactions VALUES (1, '2021-11-05 18:00:34.000000', 'NT10204', 'RS88012', 1000, 'commited');
 INSERT INTO transactions VALUES (2, '2021-11-05 18:01:19.000000', 'NK90123', 'AB10203', 500, 'rollback');
 INSERT INTO transactions VALUES (3, '2021-06-05 18:02:45.000000', 'RS88012', 'NT10204', 400, 'init');
+
+
+drop table transactions;
+drop table accounts;
+drop table customers;
