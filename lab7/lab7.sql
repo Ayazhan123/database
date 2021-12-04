@@ -23,7 +23,7 @@ create table transactions (
 
 INSERT INTO customers VALUES (201, 'John', '2021-11-05');
 INSERT INTO customers VALUES (202, 'Anny', '2021-11-02');
-INSERT INTO customers VALUES (203, 'Rick', '2021-11-24');
+INSERT INTO customers VALUES (203, 'Rick', '2021-11-24'); 
 
 INSERT INTO accounts VALUES ('NT10204', 201, 'KZT', 1000, null);
 INSERT INTO accounts VALUES ('AB10203', 202, 'USD', 100, 0);
